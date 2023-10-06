@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app = "MenuApp">
+<head>
+	<title>Solution of Module 4 by winterroll</title>
+	<script type="text/javascript" src = "angular.min.js"></script>
+	<script type="text/javascript" src = "angular-ui-router.min.js"></script>
+	<script type="text/javascript" src = "data.module.js"></script>
+	<script type="text/javascript" src = "menuapp.module.js"></script>
+	<script type="text/javascript" src = "menuapp.controller.js"></script>
+	<script type="text/javascript" src = "categories.component.js"></script>
+	<script type="text/javascript" src = "menudata.service.js"></script>
+	<script type="text/javascript" src = "categories.state.controller.js"></script>
+	<script type="text/javascript" src = "items.state.controller.js"></script>
+	<script type="text/javascript" src = "items.component.js"></script>
+	<script type="text/javascript" src = "routes.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-controller = 'MenuAppController as mainController'>
+	<h1>Welcome to Our restrount!</h1>
+
+	<!-- <a ui-sref = 'categories' ui-sref-active="activeTab">Categorie</a>
+	 -->
+	<br>
+	<ui-view></ui-view>
+
+</body>
+</html>
