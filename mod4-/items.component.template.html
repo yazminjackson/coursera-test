@@ -1,0 +1,11 @@
+<div class = "itemsComponent">
+	<br>
+	<div>Here are our menu in this categori:</div>
+
+<ol ng-if="$ctrl.itemsList.length > 0">
+	<li ng-repeat = "item in $ctrl.itemsList">
+		{{item.name}}: {{item.description}}. Price: ${{item.price_large}}(large) ${{item.price_small}}(small)
+	</li>
+</ol>
+<span ng-if="$ctrl.itemsList.length==0"> There is nothing to show.</span>
+</div>
