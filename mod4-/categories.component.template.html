@@ -1,0 +1,9 @@
+<div class = "categoriesComponent">
+	<div>Here are our menu categories:</div>
+<ol ng-if="$ctrl.categorieList.length > 0">
+	<li ng-repeat = "categorie in $ctrl.categorieList" >
+		<a ui-sref="items({itemShortName:categorie.short_name})">{{categorie.name}}</a>
+	</li>
+</ol>
+<span ng-if="$ctrl.categorieList.length==0"> There is nothing to show.</span>
+</div>
